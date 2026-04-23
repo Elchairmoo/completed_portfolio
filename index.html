@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amg Topper | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+      <nav class="navbar">
+        <a href="#home" style="--i: 1" class="active">Home</a>
+        <a href="#about" style="--i: 2">About</a>
+        <a href="#services" style="--i: 3">Services</a>
+        <a href="#skills" style="--i: 4">Skills</a>
+        <a href="#portfolio" style="--i: 5">Projects</a>
+        <a href="#contact" style="--i: 6">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's me</h3>
+        <h1>Amg Topper,</h1>
+        <h3>And I'm a <span class="text"></span></h3>
+        <p>
+          I'm a Web Designer with 2 years of experience. I have a passion for
+          creating beautiful and functional websites. I have a strong background
+          in <em>HTML, CSS, JavaScript, and React</em>. I am always looking for
+          new challenges and opportunities to learn and grow.
+        </p>
+        <div class="home-sci">
+          <a href="#" style="--i: 7"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+          <a href="#" style="--i: 8"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+          <a href="#" style="--i: 9"
+            ><ion-icon name="logo-whatsapp"></ion-icon
+          ></a>
+          <a href="#" style="--i: 10"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+        </div>
+        <a href="#about" class="btn-box">More About Me</a>
+      </div>
+      <span class="home-imgHover"></span>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/about_me.png" alt="About Me" />
+      </div>
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>Full Stack Developer</h4>
+        <p>
+          I'm a skilled web designer and developer with over 2 years of
+          experience in the digital space. I specialize in building responsive,
+          user-friendly interfaces and robust web applications. My goal is to
+          combine aesthetic design with seamless functionality to provide the
+          best user experience.
+        </p>
+        <a href="#contact" class="btn-box">Contact Me</a>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h1 class="sub-title">My <span>Services</span></h1>
+        <div class="services-list">
+          <div
+            onclick="location.href = '#ui-ux-projects'"
+            style="cursor: pointer"
+          >
+            <i class="bx bx-paint" style="color: #00eeff"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Creating intuitive and engaging user interfaces that provide a
+              seamless user experience across all devices.
+            </p>
+            <a href="#ui-ux-projects" class="read">View Projects</a>
+          </div>
+          <div
+            onclick="location.href = '#web-design-projects'"
+            style="cursor: pointer"
+          >
+            <i class="bx bx-layout" style="color: #00eeff"></i>
+            <h2>Web Design</h2>
+            <p>
+              Designing visually stunning and modern websites tailored to your
+              brand identity and business goals.
+            </p>
+            <a href="#web-design-projects" class="read">View Projects</a>
+          </div>
+          <div
+            onclick="location.href = '#web-dev-projects'"
+            style="cursor: pointer"
+          >
+            <i class="bx bx-code-alt" style="color: #00eeff"></i>
+            <h2>Web Dev</h2>
+            <p>
+              Developing high-performance, scalable web applications using the
+              latest technologies and best practices.
+            </p>
+            <a href="#web-dev-projects" class="read">View Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+      <h1 class="sub-title">My <span>Skills</span></h1>
+      <div class="skills-container">
+        <div class="container1">
+          <h1 class="heading1">Technical Skills</h1>
+          <div class="Technical-bars">
+            <div class="bar">
+              <ion-icon name="logo-html5" style="color: #e34c26"></ion-icon>
+              <div class="info"><span>HTML</span></div>
+              <div class="progress-line html"><span></span></div>
+            </div>
+            <div class="bar">
+              <ion-icon name="logo-css3" style="color: #264de4"></ion-icon>
+              <div class="info"><span>CSS</span></div>
+              <div class="progress-line css"><span></span></div>
+            </div>
+            <div class="bar">
+              <ion-icon
+                name="logo-javascript"
+                style="color: #f7df1e"
+              ></ion-icon>
+              <div class="info"><span>Javascript</span></div>
+              <div class="progress-line javascript"><span></span></div>
+            </div>
+            <div class="bar">
+              <ion-icon name="logo-react" style="color: #61dafb"></ion-icon>
+              <div class="info"><span>React</span></div>
+              <div class="progress-line react"><span></span></div>
+            </div>
+            <div class="bar">
+              <ion-icon name="logo-nodejs" style="color: #339933"></ion-icon>
+              <div class="info"><span>NodeJs</span></div>
+              <div class="progress-line nodejs"><span></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container1">
+          <h1 class="heading1">Professional Skills</h1>
+          <div class="radial-bars">
+            <div class="radial-bar">
+              <svg viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">90%</div>
+              <div class="text">Creativity</div>
+            </div>
+            <div class="radial-bar">
+              <svg viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">70%</div>
+              <div class="text">Communication</div>
+            </div>
+            <div class="radial-bar">
+              <svg viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">75%</div>
+              <div class="text">Problem Solving</div>
+            </div>
+            <div class="radial-bar">
+              <svg viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">90%</div>
+              <div class="text">Team Work</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="main-text">
+        <h1 class="sub-title">Latest <span>Projects</span></h1>
+
+        <div id="ui-ux-projects" class="project-category">
+          <h2 class="category-title">UI/UX <span>Design</span></h2>
+          <div class="portfolio-content">
+            <div class="row">
+              <img src="images/ui_ux.webp" alt="UI/UX Project" />
+              <div class="layer">
+                <h5>Mobile App UI</h5>
+                <p>
+                  A modern mobile application interface designed for optimal
+                  user engagement and ease of use.
+                </p>
+                <a href="#"><i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="web-design-projects" class="project-category">
+          <h2 class="category-title">Web <span>Design</span></h2>
+          <div class="portfolio-content">
+            <div class="row">
+              <img src="images/web_design.png" alt="Web Design Project" />
+              <div class="layer">
+                <h5>Creative Agency Site</h5>
+                <p>
+                  A visually striking website for a creative agency, focusing on
+                  bold typography and smooth transitions.
+                </p>
+                <a href="#"><i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="web-dev-projects" class="project-category">
+          <h2 class="category-title">Web <span>Development</span></h2>
+          <div class="portfolio-content">
+            <div class="row">
+              <img src="images/web_dev.jpg" alt="Web Dev Project" />
+              <div class="layer">
+                <h5>E-commerce Platform</h5>
+                <p>
+                  A full-featured e-commerce solution built with React and
+                  Node.js, featuring secure payments and real-time inventory.
+                </p>
+                <a href="#"><i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <h2>Contact <span>Me</span></h2>
+        <h4>Let's Work Together</h4>
+        <p>
+          Have a project in mind or just want to say hi? Feel free to reach out!
+        </p>
+        <div class="contact-list">
+          <li><i class="bx bxs-send"></i> kingsleyking3002@gmail.com</li>
+          <li><i class="bx bxs-phone"></i> ++233 (0) 207415469</li>
+        </div>
+        <div class="contact-icons">
+          <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="">
+          <input type="text" placeholder="Enter Your Name" required />
+          <input type="email" placeholder="Enter Your Email" required />
+          <input type="text" placeholder="Enter Your Subject" />
+          <textarea
+            name=""
+            id=""
+            cols="40"
+            rows="10"
+            placeholder="Enter Your Message"
+            required
+          ></textarea>
+          <input type="submit" value="Submit" class="send" />
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
