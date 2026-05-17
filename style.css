@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -17,7 +17,7 @@ body {
   left: 0;
   width: 100%;
   background: #051129;
-  padding: 20px 10%;
+  padding: 2rem 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +46,8 @@ body {
   animation-delay: calc(0.2s * var(--i));
 }
 
-.navbar a:hover, .navbar a.active {
+.navbar a:hover,
+.navbar a.active {
   color: #0ef;
 }
 
@@ -154,7 +155,7 @@ body {
 }
 
 .about-text h2 {
-  font-size: 60px;
+  font-size: 6rem;
 }
 
 .about-text h2 span {
@@ -182,8 +183,8 @@ body {
 
 .sub-title {
   text-align: center;
-  font-size: 60px;
-  margin-bottom: 60px;
+  font-size: 6rem;
+  margin-bottom: 6rem;
 }
 
 .sub-title span {
@@ -202,8 +203,12 @@ body {
   font-size: 13px;
   font-weight: 13px;
   border-radius: 20px;
-  transition: background 0.5s, transform 0.5s;
-  box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+  transition:
+    background 0.5s,
+    transform 0.5s;
+  box-shadow:
+    1px 1px 20px #012290f7,
+    1px 1px 40px #0053b8f7;
 }
 
 .services-list div:hover {
@@ -299,14 +304,26 @@ body {
 }
 
 @keyframes animateProgress {
-  100% { transform: scaleX(1); }
+  100% {
+    transform: scaleX(1);
+  }
 }
 
-.progress-line.html span { width: 90%; }
-.progress-line.css span { width: 60%; }
-.progress-line.javascript span { width: 85%; }
-.progress-line.react span { width: 50%; }
-.progress-line.nodejs span { width: 68%; }
+.progress-line.html span {
+  width: 90%;
+}
+.progress-line.css span {
+  width: 60%;
+}
+.progress-line.javascript span {
+  width: 85%;
+}
+.progress-line.react span {
+  width: 50%;
+}
+.progress-line.nodejs span {
+  width: 68%;
+}
 
 .radial-bars {
   display: flex;
@@ -350,7 +367,9 @@ body {
 }
 
 @keyframes animatePath {
-  100% { stroke-dashoffset: 150; }
+  100% {
+    stroke-dashoffset: 150;
+  }
 }
 
 .radial-bar .percentage {
@@ -415,7 +434,7 @@ body {
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0,0,0,0.1), #0ef);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
   position: absolute;
   left: 0;
   bottom: 0;
@@ -536,7 +555,8 @@ body {
   position: relative;
 }
 
-.contact-form form input, .contact-form form textarea {
+.contact-form form input,
+.contact-form form textarea {
   border: none;
   outline: none;
   width: 90%;
@@ -569,21 +589,147 @@ body {
 }
 
 @keyframes slideRight {
-  0% { transform: translateX(-100px); opacity: 0; }
-  100% { transform: translateX(0); opacity: 1; }
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slideLeft {
-  0% { transform: translateX(100px); opacity: 0; }
-  100% { transform: translateX(0); opacity: 1; }
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slideTop {
-  0% { transform: translateY(100px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slideBottom {
-  0% { transform: translateY(-100px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* RESPONSIVE DESIGN */
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 3%;
+  }
+
+  section {
+    padding: 10rem 3% 2rem;
+  }
+
+  .services {
+    padding-bottom: 7rem;
+  }
+
+  .portfolio {
+    padding-bottom: 7rem;
+  }
+
+  .contact {
+    min-height: auto;
+    padding-bottom: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: #051129;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    opacity: 1;
+    animation: none;
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 120px;
+  }
+
+  .home-content h1 {
+    font-size: 5rem;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .contact-form form .input-box input {
+    width: 100%;
+  }
 }
